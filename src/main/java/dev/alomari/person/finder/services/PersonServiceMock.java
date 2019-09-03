@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-//@Profile("mocking")
+@Profile("mocking")
 public class PersonServiceMock implements PersonService {
 
     private static List<Person> personList;
@@ -19,7 +19,7 @@ public class PersonServiceMock implements PersonService {
         personList.add(new Person(1L, "Abdulmajeed", 22));
         personList.add(new Person(2L, "Yousef", 35));
         personList.add(new Person(3L, "Ahmad", 17));
-    }
+}
 
     @Override
     public Person findPerson(Long id) {

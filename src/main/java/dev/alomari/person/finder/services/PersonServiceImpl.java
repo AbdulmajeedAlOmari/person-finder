@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-//@Profile("prod")
+@Profile("prod")
 public class PersonServiceImpl implements PersonService {
 
     @Override
